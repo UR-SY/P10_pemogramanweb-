@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Praktikum Javascript Lampu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 80px;
+        }
+
+        .box {
+            width: 300px;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h2>Apa yang bisa dilakukan Javascript?</h2>
+
+<div class="container">
+
+    <div class="box">
+
+        <h3>Apa yang bisa dilakukan Javascript?</h3>
+
+        <p>
+            JavaScript dapat mengubah nilai atribut HTML.
+        </p>
+
+        <p>
+            Dalam kasus ini JavaScript mengubah source atribut dari gambar.
+        </p>
+
+
+        <img id="lampu1" src="pic_bulboff.gif" width="100">
+
+
+        <br>
+
+        <button onclick="document.getElementById('lampu1').src='pic_bulbon.gif'">
+            Nyala
+        </button>
+
+        <button onclick="document.getElementById('lampu1').src='pic_bulboff.gif'">
+            Mati
+        </button>
+
+    </div>
+
+
+
+    <div class="box">
+
+        <h3>Apa yang bisa dilakukan Javascript?</h3>
+
+        <p>
+            JavaScript dapat mengubah nilai atribut HTML.
+        </p>
+
+        <p>
+            Dalam kasus ini JavaScript mengubah source atribut dari gambar.
+        </p>
+
+
+        <img id="lampu2" src="pic_bulboff.gif" width="100">
+
+
+        <br>
+
+        <button onclick="nyalakanLampu()">
+            Nyala
+        </button>
+
+        <button onclick="matikanLampu()">
+            Mati
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function nyalakanLampu(){
+
+    document.getElementById("lampu2").src="pic_bulbon.gif";
+
+}
+
+
+function matikanLampu(){
+
+    document.getElementById("lampu2").src="pic_bulboff.gif";
+
+}
+
+</script>
+
+
+</body>
+</html>
